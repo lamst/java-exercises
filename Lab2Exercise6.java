@@ -1,5 +1,3 @@
-import javax.lang.model.util.ElementScanner14;
-
 /**
  * This class demonstrates the use of conditional (if) statements
  * @author Jennifer Lau
