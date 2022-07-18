@@ -1,6 +1,16 @@
 import javax.lang.model.util.ElementScanner14;
 
-/*
+/**
+ * Calculates the factorial of an integer. We know that n! = n * (n-1)!. Therefore
+ * we might also say (n - 1)! = n!/n. Hence, 1! = 2!/2 = 1. Similiarly, 0! = 1! / 1 = 1
+ * However, (-1)! means 0! / 0 = 1 / 0 which is undefined. 
+ * 
+ * With this, the method getFactorial will return the factorial of an integer. It will 
+ * return -1 if the parameter passed to the getFactorial method is negative. In the main
+ * method, we check the return value from the getFactorial method. If the returned value
+ * is positive, the result is printed on the screen. Alternatively, if the returned value
+ * was negative, "undefined" is printed.
+ * 
  * @author Jennifer Lau
  */
 class Lab6Exercise3
@@ -8,7 +18,7 @@ class Lab6Exercise3
   public static void main (String[] args)
   {
     // Use the function below
-    int result = getFactorial(-2);
+    int result = getFactorial(1);
 
     // Print result
     if (result > 0)
@@ -34,6 +44,9 @@ class Lab6Exercise3
       result *= i;
     }
 
+    // Determine whether the integer to calculate the factorial 
+    // is positive, return -1 to indicate the factorial cannot
+    // be calculated if the integer is negative
     if (n >= 0)
       return result;
     else
