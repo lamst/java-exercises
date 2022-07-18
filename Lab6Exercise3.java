@@ -17,10 +17,10 @@ class Lab6Exercise3
 {
   public static void main (String[] args)
   {
-    // Use the function below
+    // Use the getFactorial method to calculate the factorial of an integer
     int result = getFactorial(1);
 
-    // Print result
+    // Print the result
     if (result > 0)
       System.out.println(result);
     else
@@ -40,7 +40,7 @@ class Lab6Exercise3
     // Go through all integers, from 1 to n inclusive
     for (int i = 1; i<= n; i++)
     {
-      // Multiply answer by current integer
+      // Multiply answer by the current integer
       result *= i;
     }
 
